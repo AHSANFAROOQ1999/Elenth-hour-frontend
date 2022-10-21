@@ -1,0 +1,21 @@
+.main-header {
+  .sticky-header {
+    padding: 20px 0;
+    background: white;
+    //   transition: $transition-base;
+  }
+
+  .affix {
+    top: 0;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    animation: 300ms ease-in-out fadeInDown;
+    //   background: $dark;
+    padding: 10px 0;
+    //   transition: $transition-base;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+}

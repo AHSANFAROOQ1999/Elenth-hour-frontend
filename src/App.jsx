@@ -13,6 +13,8 @@ import NotFound from "./pages/NotFound/NotFound";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import LoginPage from "./pages/LoginPage/LoginPage";
+import SignUpPage from "./pages/SignUpPage/SignUpPage";
 
 // ⬇ Redux Reducers
 
@@ -22,18 +24,16 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header style={{ height: "15vh" }} />
-        <Container
-          maxWidth="xl"
-          disableGutters={true}
-          style={{ height: "70vh" }}
-        >
+        {window.location.pathname !== "/login" ? <Header /> : null}
+        <Container maxWidth="100vw" disableGutters={true}>
           <Routes>
             <Route path="*" element={<NotFound />} />
             <Route path="/" element={<LandingPage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/signup" element={<SignUpPage />} />
           </Routes>
         </Container>
-        <Footer style={{ height: "15vh" }} />
+        <Footer />
       </BrowserRouter>
     </div>
   );
