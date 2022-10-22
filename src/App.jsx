@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Container } from "@mui/material";
-
+import ServicePage from './pages/ServicePage/ServicePage'
+import PricingPage from './pages/PricingPage/PricingPage'
 // Media & StyleSheets
 import "./App.scss";
 
@@ -31,6 +32,8 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<SignUpPage />} />
+            <Route path="/pricing" element={<PricingPage />} />
+            <Route path="/service" element={<ServicePage />} />
           </Routes>
         </Container>
         <Footer />
