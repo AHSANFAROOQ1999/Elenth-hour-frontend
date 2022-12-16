@@ -858,7 +858,7 @@ function Home() {
           </Box>
         </Box>
       </Box>
-      <Box className="contect-us">
+      <Box className="contect-us">  
         <Box
           sx={{
             width: { lg: "1200px", md: "900px", sm: "720px", xs: "350px" },
