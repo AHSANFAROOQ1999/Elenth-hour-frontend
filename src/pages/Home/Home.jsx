@@ -865,7 +865,7 @@ function Home() {
           }}
           padding="100px 0px"
           paddingBottom="120px"
-          margin="auto"
+          margin="auto" 
         >
           <Box display="flex" style={{ justifyContent: "space-between" }}>
             <Typography
