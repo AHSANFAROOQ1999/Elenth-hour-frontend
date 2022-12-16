@@ -1,9 +1,6 @@
 // Library Imports
-
 import React, { useEffect, useState } from "react";
 import { Box, Grid, Typography, Button } from "@mui/material";
-// import img1 from './../../assets/umerbhisite/img/service.png'
-
 import Service1 from "../../assets/umerbhisite/img/service1.png";
 import Service2 from "../../assets/umerbhisite/img/service2.png";
 import Service3 from "../../assets/umerbhisite/img/service3.png";
@@ -17,27 +14,36 @@ import Clean4 from "../../assets/umerbhisite/img/clean4.png";
 import Clean5 from "../../assets/umerbhisite/img/clean5.png";
 import Clean6 from "../../assets/umerbhisite/img/clean6.png";
 import Bannerimg from "../../assets/umerbhisite/img/landingpage.PNG";
+import BgImg from "./../../assets/umerbhisite/img/contectbanner.jpg";
+import Quote from "./../../assets/umerbhisite/img/quote.png";
 // Media & StyleSheets
-
+import "./Style.scss";
 // Pages, Components
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { display } from "@mui/system";
 
 export default function LandingPage() {
   const [expanded, setExpanded] = React.useState(false);
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
   return (
     <Box>
-      {/* <Box style={{backgroundImage:{Bannerimg}}}> */}
+      <Box>
+        <img src={Bannerimg} width="100%" alt="banner" />
+      </Box>
 
-      
-      <Box style={{ backgroundImage:{Bannerimg} }}>
+      <Box style={{ backgroundColor: "#F0F4F7" }}>
         <Box
           sx={{
             width: { lg: "1200px", md: "900px", sm: "720px", xs: "350px" },
@@ -59,16 +65,16 @@ export default function LandingPage() {
             Why choose Eleventh Hour Services?
           </Typography>
           <Grid container my={4} rowSpacing={2} columnSpacing={2}>
-            <Grid sm={4} md={4} xs={12} style={{padding:'30px'}}>
+            <Grid sm={4} md={4} xs={12} style={{ padding: "30px" }}>
               <Box
                 style={{
                   backgroundColor: "white",
                   borderRadius: "50%",
-                  border:'1px solid lightgrey',
+                  border: "1px solid lightgrey",
                   width: "200px",
                   height: "200px",
                   display: "inline-block",
-                  position:'relative'
+                  position: "relative",
                 }}
               >
                 <img
@@ -78,15 +84,19 @@ export default function LandingPage() {
                   alt="img"
                   style={{ padding: "50px" }}
                 />
-                <Box style={{
-                  backgroundColor: '#2e96db',
-                  color:'white',
-                  position: 'absolute',
-                  padding: '10px',
-                  borderRadius: '50%',
-                  right: '30px',
-                  bottom: '0',
-                }}>1</Box>
+                <Box
+                  style={{
+                    backgroundColor: "#2e96db",
+                    color: "white",
+                    position: "absolute",
+                    padding: "10px",
+                    borderRadius: "50%",
+                    right: "30px",
+                    bottom: "0",
+                  }}
+                >
+                  1
+                </Box>
               </Box>
               <Typography
                 variant="h6"
@@ -111,16 +121,16 @@ export default function LandingPage() {
                 game
               </Typography>
             </Grid>
-            <Grid sm={4} md={4} xs={12} style={{padding:'30px'}}>
+            <Grid sm={4} md={4} xs={12} style={{ padding: "30px" }}>
               <Box
                 style={{
                   backgroundColor: "white",
                   borderRadius: "50%",
-                  border:'1px solid lightgrey',
+                  border: "1px solid lightgrey",
                   width: "200px",
                   height: "200px",
                   display: "inline-block",
-                  position:'relative'
+                  position: "relative",
                 }}
               >
                 <img
@@ -130,15 +140,19 @@ export default function LandingPage() {
                   alt="img"
                   style={{ padding: "50px" }}
                 />
-                <Box style={{
-                  backgroundColor: '#2e96db',
-                  color:'white',
-                  position: 'absolute',
-                  padding: '10px',
-                  borderRadius: '50%',
-                  right: '30px',
-                  bottom: '0',
-                }}>2</Box>
+                <Box
+                  style={{
+                    backgroundColor: "#2e96db",
+                    color: "white",
+                    position: "absolute",
+                    padding: "10px",
+                    borderRadius: "50%",
+                    right: "30px",
+                    bottom: "0",
+                  }}
+                >
+                  2
+                </Box>
               </Box>
               <Typography
                 variant="h6"
@@ -158,19 +172,21 @@ export default function LandingPage() {
                   fontSize: "13px",
                   fontWeight: "400",
                 }}
-              >We offer peace of mind by having you covered with a 48 hour FREE Re-Clean Guarantee.
+              >
+                We offer peace of mind by having you covered with a 48 hour FREE
+                Re-Clean Guarantee.
               </Typography>
             </Grid>
-            <Grid sm={4} md={4} xs={12} style={{padding:'30px'}}>
+            <Grid sm={4} md={4} xs={12} style={{ padding: "30px" }}>
               <Box
                 style={{
                   backgroundColor: "white",
                   borderRadius: "50%",
-                  border:'1px solid lightgrey',
+                  border: "1px solid lightgrey",
                   width: "200px",
                   height: "200px",
                   display: "inline-block",
-                  position:'relative'
+                  position: "relative",
                 }}
               >
                 <img
@@ -180,15 +196,19 @@ export default function LandingPage() {
                   alt="img"
                   style={{ padding: "50px" }}
                 />
-                <Box style={{
-                  backgroundColor: '#2e96db',
-                  color:'white',
-                  position: 'absolute',
-                  padding: '10px',
-                  borderRadius: '50%',
-                  right: '30px',
-                  bottom: '0',
-                }}>3</Box>
+                <Box
+                  style={{
+                    backgroundColor: "#2e96db",
+                    color: "white",
+                    position: "absolute",
+                    padding: "10px",
+                    borderRadius: "50%",
+                    right: "30px",
+                    bottom: "0",
+                  }}
+                >
+                  3
+                </Box>
               </Box>
               <Typography
                 variant="h6"
@@ -198,7 +218,8 @@ export default function LandingPage() {
                   fontWeight: "700",
                   margin: "15px 0px",
                 }}
-              >Pay after the services
+              >
+                Pay after the services
               </Typography>
               <Typography
                 variant="p"
@@ -207,27 +228,23 @@ export default function LandingPage() {
                   fontSize: "13px",
                   fontWeight: "400",
                 }}
-              >A hold will be applied 48 hour prior to the service and the payment will only be processed after the service.
+              >
+                A hold will be applied 48 hour prior to the service and the
+                payment will only be processed after the service.
               </Typography>
             </Grid>
           </Grid>
-          <Grid
-            container
-            my={4}
-            rowSpacing={2}
-            columnSpacing={2}
-            // style={{ marginTop: "80px" }}
-          >
-            <Grid sm={4} md={4} xs={12} style={{padding:'30px'}}>
+          <Grid container my={4} rowSpacing={2} columnSpacing={2}>
+            <Grid sm={4} md={4} xs={12} style={{ padding: "30px" }}>
               <Box
                 style={{
                   backgroundColor: "white",
                   borderRadius: "50%",
-                  border:'1px solid lightgrey',
+                  border: "1px solid lightgrey",
                   width: "200px",
                   height: "200px",
                   display: "inline-block",
-                  position:'relative'
+                  position: "relative",
                 }}
               >
                 <img
@@ -237,15 +254,19 @@ export default function LandingPage() {
                   alt="img"
                   style={{ padding: "50px" }}
                 />
-                <Box style={{
-                  backgroundColor: '#2e96db',
-                  color:'white',
-                  position: 'absolute',
-                  padding: '10px',
-                  borderRadius: '50%',
-                  right: '30px',
-                  bottom: '0',
-                }}>4</Box>
+                <Box
+                  style={{
+                    backgroundColor: "#2e96db",
+                    color: "white",
+                    position: "absolute",
+                    padding: "10px",
+                    borderRadius: "50%",
+                    right: "30px",
+                    bottom: "0",
+                  }}
+                >
+                  4
+                </Box>
               </Box>
               <Typography
                 variant="h6"
@@ -255,7 +276,8 @@ export default function LandingPage() {
                   fontWeight: "700",
                   margin: "15px 0px",
                 }}
-              >Re-Clean Guarantee
+              >
+                Re-Clean Guarantee
               </Typography>
               <Typography
                 variant="p"
@@ -264,19 +286,21 @@ export default function LandingPage() {
                   fontSize: "13px",
                   fontWeight: "400",
                 }}
-              >We are confident of our work but for the sake of peace of mind, you are covered with our 48 hour free reclean guarantee.
+              >
+                We are confident of our work but for the sake of peace of mind,
+                you are covered with our 48 hour free reclean guarantee.
               </Typography>
             </Grid>
-            <Grid sm={4} md={4} xs={12} style={{padding:'30px'}}>
+            <Grid sm={4} md={4} xs={12} style={{ padding: "30px" }}>
               <Box
                 style={{
                   backgroundColor: "white",
                   borderRadius: "50%",
-                  border:'1px solid lightgrey',
+                  border: "1px solid lightgrey",
                   width: "200px",
                   height: "200px",
                   display: "inline-block",
-                  position:'relative'
+                  position: "relative",
                 }}
               >
                 <img
@@ -286,15 +310,19 @@ export default function LandingPage() {
                   alt="img"
                   style={{ padding: "50px" }}
                 />
-                <Box style={{
-                  backgroundColor: '#2e96db',
-                  color:'white',
-                  position: 'absolute',
-                  padding: '10px',
-                  borderRadius: '50%',
-                  right: '30px',
-                  bottom: '0',
-                }}>5</Box>
+                <Box
+                  style={{
+                    backgroundColor: "#2e96db",
+                    color: "white",
+                    position: "absolute",
+                    padding: "10px",
+                    borderRadius: "50%",
+                    right: "30px",
+                    bottom: "0",
+                  }}
+                >
+                  5
+                </Box>
               </Box>
               <Typography
                 variant="h6"
@@ -304,7 +332,8 @@ export default function LandingPage() {
                   fontWeight: "700",
                   margin: "15px 0px",
                 }}
-              >No Cancellations Charges
+              >
+                No Cancellations Charges
               </Typography>
               <Typography
                 variant="p"
@@ -313,19 +342,22 @@ export default function LandingPage() {
                   fontSize: "13px",
                   fontWeight: "400",
                 }}
-              >Things happen and therefore wo do not charge any cancellation fee but the cancellation must be al least 24 hours before to the date the service is to be provided. 
+              >
+                Things happen and therefore wo do not charge any cancellation
+                fee but the cancellation must be al least 24 hours before to the
+                date the service is to be provided.
               </Typography>
             </Grid>
-            <Grid sm={4} md={4} xs={12} style={{padding:'30px'}}>
+            <Grid sm={4} md={4} xs={12} style={{ padding: "30px" }}>
               <Box
                 style={{
                   backgroundColor: "white",
                   borderRadius: "50%",
-                  border:'1px solid lightgrey',
+                  border: "1px solid lightgrey",
                   width: "200px",
                   height: "200px",
                   display: "inline-block",
-                  position:'relative'
+                  position: "relative",
                 }}
               >
                 <img
@@ -335,15 +367,19 @@ export default function LandingPage() {
                   alt="img"
                   style={{ padding: "50px" }}
                 />
-                <Box style={{
-                  backgroundColor: '#2e96db',
-                  color:'white',
-                  position: 'absolute',
-                  padding: '10px',
-                  borderRadius: '50%',
-                  right: '30px',
-                  bottom: '0',
-                }}>6</Box>
+                <Box
+                  style={{
+                    backgroundColor: "#2e96db",
+                    color: "white",
+                    position: "absolute",
+                    padding: "10px",
+                    borderRadius: "50%",
+                    right: "30px",
+                    bottom: "0",
+                  }}
+                >
+                  6
+                </Box>
               </Box>
               <Typography
                 variant="h6"
@@ -353,7 +389,8 @@ export default function LandingPage() {
                   fontWeight: "700",
                   margin: "15px 0px",
                 }}
-              >Flexibility to reschedule
+              >
+                Flexibility to reschedule
               </Typography>
               <Typography
                 variant="p"
@@ -362,13 +399,14 @@ export default function LandingPage() {
                   fontSize: "13px",
                   fontWeight: "400",
                 }}
-              >We provide flexibility to reschedule without any charges but please notify at least 24 hours before.
+              >
+                We provide flexibility to reschedule without any charges but
+                please notify at least 24 hours before.
               </Typography>
             </Grid>
           </Grid>
         </Box>
       </Box>
-      {/* </Box> */}
       <Box
         sx={{ width: { lg: "1200px", md: "900px", sm: "720px", xs: "350px" } }}
         paddingTop="60px"
@@ -376,7 +414,12 @@ export default function LandingPage() {
         margin="auto"
       >
         <Typography
-          style={{ color: "#074e97", fontSize: "42px", fontWeight: "300", textAlign:'center'}}
+          style={{
+            color: "#074e97",
+            fontSize: "42px",
+            fontWeight: "300",
+            textAlign: "center",
+          }}
         >
           Our Professional Services
         </Typography>
@@ -478,7 +521,8 @@ export default function LandingPage() {
                     fontWeight: "400",
                   }}
                 >
-                  End of tenancy cleaning for restoring a property to satisfy your landlord.
+                  End of tenancy cleaning for restoring a property to satisfy
+                  your landlord.
                 </Typography>
               </Box>
             </Box>
@@ -536,7 +580,8 @@ export default function LandingPage() {
                     fontWeight: "400",
                   }}
                 >
-                  Cleaning Gurus specialise in domestic window cleaning services in London and the surrounding areas.
+                  Cleaning Gurus specialise in domestic window cleaning services
+                  in London and the surrounding areas.
                 </Typography>
               </Box>
             </Box>
@@ -596,7 +641,8 @@ export default function LandingPage() {
                     fontWeight: "400",
                   }}
                 >
-                  We offer professional carpet and upholstery cleaning giving the worn-out carpets a fresh look
+                  We offer professional carpet and upholstery cleaning giving
+                  the worn-out carpets a fresh look
                 </Typography>
               </Box>
             </Box>
@@ -654,7 +700,8 @@ export default function LandingPage() {
                     fontWeight: "400",
                   }}
                 >
-                  Do you need professional cleaning of the Oven, Fridge, Dishwasher, Washing machine, we have you covered.
+                  Do you need professional cleaning of the Oven, Fridge,
+                  Dishwasher, Washing machine, we have you covered.
                 </Typography>
               </Box>
             </Box>
@@ -702,7 +749,7 @@ export default function LandingPage() {
                     marginBottom: "15px",
                   }}
                 >
-                  Extra Shiny 
+                  Extra Shiny
                 </Typography>
                 <Typography
                   variant="p"
@@ -712,7 +759,8 @@ export default function LandingPage() {
                     fontWeight: "400",
                   }}
                 >
-                  Giving your house a fresh feel, a clean property leading to a safer and a healthier environment.
+                  Giving your house a fresh feel, a clean property leading to a
+                  safer and a healthier environment.
                 </Typography>
               </Box>
             </Box>
@@ -734,6 +782,95 @@ export default function LandingPage() {
           </Grid>
         </Grid>
       </Box>
+
+      <Box className="formsection">
+        <Box
+          style={{
+            display: "flex",
+            gap: "30px",
+            justifycontent: "space-between",
+          }}
+        >
+          <Box>
+            <img
+              src={Quote}
+              alt="banneer"
+              style={{
+                position: "relative",
+                right: "10%",
+                width: "50%",
+                float: "right",
+              }}
+            />
+          </Box>
+          <Box>
+            <div className="form-contect">
+              <form action="https://formspree.io/f/xdojpbwp" method="post">
+                <div className="upper-feild">
+                  <input
+                    className="namefeild1"
+                    required
+                    placeholder="Enter First Name"
+                    name="name"
+                    type="text"
+                  />
+                  <input
+                    className="namefeild2"
+                    required
+                    placeholder="Enter Last Name"
+                    name="name"
+                    type="text"
+                  />
+                </div>
+                <br />
+
+                <input
+                  className="namefeild"
+                  required
+                  placeholder="Enter Email"
+                  name="email"
+                  type="email"
+                />
+                <br />
+                <input
+                  className="namefeild"
+                  required
+                  placeholder="Enter Mobile Number"
+                  name="Number"
+                  type="tel"
+                />
+                <br />
+                <input
+                  className="namefeild"
+                  required
+                  placeholder="Enter Postel Code"
+                  name="Number"
+                  type="tel"
+                />
+                <br />
+                <input
+                  className="namefeild"
+                  required
+                  placeholder="Enter Plese Mention the detial of property"
+                  name="Number"
+                  type="textarea"
+                />
+                <br />
+                <input
+                  className="namefeild"
+                  required
+                  placeholder="Best time to Call"
+                  name="Number"
+                  type="tel"
+                />
+                <br />
+                <button className="from-button">Submit</button>
+              </form>
+            </div>
+          </Box>
+        </Box>
+      </Box>
+
       <Box
         sx={{ width: { lg: "1200", md: "900px", sm: "600px", xs: "350px" } }}
         paddingTop="60px"
@@ -741,19 +878,17 @@ export default function LandingPage() {
         margin="auto"
       >
         <Typography
-            style={{
-              textAlign: "center",
-              color: "#074e97",
-              fontSize: "42px",
-              fontWeight: "300",
-              margin: "0px 0px 20px 0px",
-            }}
-          >
-            Frequently Asked Questions
-          </Typography>
-        <Box
-        // width="50%"
+          style={{
+            textAlign: "center",
+            color: "#074e97",
+            fontSize: "42px",
+            fontWeight: "300",
+            margin: "0px 0px 20px 0px",
+          }}
         >
+          Frequently Asked Questions
+        </Typography>
+        <Box>
           <Accordion
             expanded={expanded === "panel1"}
             onChange={handleChange("panel1")}
@@ -789,7 +924,18 @@ export default function LandingPage() {
                   textAlign: "left",
                 }}
               >
-                Deep Cleaning is a professional service that offers a thorough cleaning in contrast to regular cleaning. In a professional deep cleaning, we go the extra mile by cleaning behind the radiators and cleaning inside the cupboards, drawers, and kitchen cabinets. It also covers professional cleaning of the kitchen, the hood, the hob, deep cleaning of the extractor fans, deep cleaning of the bathroom tiles, deep scaling and lime scaling of the shower heads, taps, handles, and dusting of the lighting fixtures and much more. A professional deep clean gives your property a fresh feel and a clean safe and healthy environment. It is recommended to have your house/apartment deep cleaned at least twice a year.
+                Deep Cleaning is a professional service that offers a thorough
+                cleaning in contrast to regular cleaning. In a professional deep
+                cleaning, we go the extra mile by cleaning behind the radiators
+                and cleaning inside the cupboards, drawers, and kitchen
+                cabinets. It also covers professional cleaning of the kitchen,
+                the hood, the hob, deep cleaning of the extractor fans, deep
+                cleaning of the bathroom tiles, deep scaling and lime scaling of
+                the shower heads, taps, handles, and dusting of the lighting
+                fixtures and much more. A professional deep clean gives your
+                property a fresh feel and a clean safe and healthy environment.
+                It is recommended to have your house/apartment deep cleaned at
+                least twice a year.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -829,7 +975,13 @@ export default function LandingPage() {
                   textAlign: "left",
                 }}
               >
-                An End of Tenancy Cleaning or Move in Move out Cleaning refers to the type of cleaning required when a tenant moves out of rented accommodation. This can be undertaken by either the tenant or landlord or by the letting agency. It involves cleaning every aspect of the property to ensure it’s returned in its original condition. This is an important type of cleaning and is essential to be undertaken before a new tenant moves in
+                An End of Tenancy Cleaning or Move in Move out Cleaning refers
+                to the type of cleaning required when a tenant moves out of
+                rented accommodation. This can be undertaken by either the
+                tenant or landlord or by the letting agency. It involves
+                cleaning every aspect of the property to ensure it’s returned in
+                its original condition. This is an important type of cleaning
+                and is essential to be undertaken before a new tenant moves in
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -857,7 +1009,7 @@ export default function LandingPage() {
                   color: "#575757",
                 }}
               >
-             How often should I have the property Deep Cleaned?
+                How often should I have the property Deep Cleaned?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -869,7 +1021,9 @@ export default function LandingPage() {
                   textAlign: "left",
                 }}
               >
-                A professional Deep Cleaning is recommended at least twice a year giving your property a fresh feel and a clean, safe and healthier environment.
+                A professional Deep Cleaning is recommended at least twice a
+                year giving your property a fresh feel and a clean, safe and
+                healthier environment.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -908,7 +1062,16 @@ export default function LandingPage() {
                   textAlign: "left",
                 }}
               >
-                Tenants are expected to leave the property in the state it was when they moved in. This includes alterations to the physical appearance of the property – like unauthorised paint jobs or damage to supplied furniture – but it also covers the level of cleanliness. If a property is not returned in its original condition, tenants will risk losing some of their deposits. Landlords can claim on the deposit if they are unhappy with how the property is left. If unresolved, the dispute will be left in the hands of the deposit adjudicators to make a reasonable decision.
+                Tenants are expected to leave the property in the state it was
+                when they moved in. This includes alterations to the physical
+                appearance of the property – like unauthorised paint jobs or
+                damage to supplied furniture – but it also covers the level of
+                cleanliness. If a property is not returned in its original
+                condition, tenants will risk losing some of their deposits.
+                Landlords can claim on the deposit if they are unhappy with how
+                the property is left. If unresolved, the dispute will be left in
+                the hands of the deposit adjudicators to make a reasonable
+                decision.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -947,7 +1110,12 @@ export default function LandingPage() {
                   textAlign: "left",
                 }}
               >
-                Eleventh Hour Cleaning service is a professional cleaning service provider in London, United Kingdom. Our professional services are not expensive. The exact costs depend on how large your home is and the exact kind of cleaning you desire. Typically, house cleaning services are surprisingly affordable. Furthermore, you can have a tailored service as per your needs.
+                Eleventh Hour Cleaning service is a professional cleaning
+                service provider in London, United Kingdom. Our professional
+                services are not expensive. The exact costs depend on how large
+                your home is and the exact kind of cleaning you desire.
+                Typically, house cleaning services are surprisingly affordable.
+                Furthermore, you can have a tailored service as per your needs.
               </Typography>
             </AccordionDetails>
           </Accordion>

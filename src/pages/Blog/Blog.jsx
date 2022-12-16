@@ -1,5 +1,5 @@
 // import { Box, Typography } from "@mui/material";
-import React from "react";
+import React,{useEffect} from "react";
 import { Link } from "react-router-dom";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Save from "./../../assets/umerbhisite/img/save.jpg";
@@ -24,9 +24,17 @@ import PeopleSharpIcon from "@mui/icons-material/PeopleSharp";
 import SettingsSharpIcon from "@mui/icons-material/SettingsSharp";
 
 function Blog() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  }, [])
   return (
     <Box
     >
+      <Box className="blogbanner">
       <Box style={{ padding: "170px 0 80px", textAlign: "center" }}>
         <Typography
           style={{ color: "#074e97", fontSize: "40px", fontWeight: "400" }}
@@ -50,6 +58,7 @@ function Blog() {
           <ArrowForwardIosIcon style={{ fontSize: "13px" }} /> What can we do
           for you?
         </Typography>
+      </Box>
       </Box>
       <Box>
       <Box style={{display:'flex', width:'65%', flexDirection:'column',float:'left',marginLeft:'10%',paddingBottom:'300px'}}>

@@ -19,6 +19,7 @@ import Blog from "./pages/Blog/Blog";
 import Contectus from "./pages/ContectUs.jsx/Contectus";
 // import { Home } from "@mui/icons-material";
 import Home from "./pages/Home/Home"
+import React, { useEffect } from "react";
 
 // ⬇ Redux Reducers
 

@@ -1,39 +1,31 @@
-import React from "react";
+import React,{useEffect} from "react";
 import {
   Typography,
   Box,
-  List,
-  ListItemText,
-  Button,
-  Rating,
   Grid,
 } from "@mui/material";
-import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
-import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-import ArrowRightAltSharpIcon from "@mui/icons-material/ArrowRightAltSharp";
-import SimCardSharpIcon from "@mui/icons-material/SimCardSharp";
-import SignalCellularAltSharpIcon from "@mui/icons-material/SignalCellularAltSharp";
-import LoopSharpIcon from "@mui/icons-material/LoopSharp";
-import PeopleSharpIcon from "@mui/icons-material/PeopleSharp";
-import SettingsSharpIcon from "@mui/icons-material/SettingsSharp";
-
-import Clean1 from "../../assets/umerbhisite/img/clean1.png";
 import Clean2 from "../../assets/umerbhisite/img/clean2.png";
 import Clean3 from "../../assets/umerbhisite/img/clean3.png";
 import Clean4 from "../../assets/umerbhisite/img/clean4.png";
-import Clean5 from "../../assets/umerbhisite/img/clean5.png";
 import Clean6 from "../../assets/umerbhisite/img/clean6.png";
 import Clean7 from "../../assets/umerbhisite/img/clean7.png";
 import Clean8 from "../../assets/umerbhisite/img/clean8.png";
 import Quote from "../../assets/umerbhisite/img/quote.png";
 import BgImg from "../../assets/umerbhisite/img/service-bg.jpg";
-import { transform } from "lodash";
+import ServiceBanner from "./../../assets/umerbhisite/img/servicebanner.PNG"
 
 function ServicePage() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  }, [])
   return (
     <>
-      {/* <Box maxWidth="100%" backgroundColor="#0b163f"> */}
-      <Box
+      <Box><img src={ServiceBanner} width="100%" alt="banneer"/></Box>
+      <Box className="servicePagebanner"><Box
         padding="120px 0px"
         color="white"
         display="flex"
@@ -465,18 +457,17 @@ function ServicePage() {
           </Grid>
         </Box>
         
-      </Box>
+      </Box></Box>
       <Box style={{width:'100%',position:'relative'}}>
-          <img src={BgImg} style={{width:'100%',position:'relative'}}/>
+          <img src={BgImg} alt="banneer" style={{width:'100%',position:'relative'}}/>
           <Box>
-          <img src={Quote}
+          <img src={Quote} alt="banneer"
           style={{
             position: 'absolute',
             top: '17%',
             width: '30%',
             left: '20%',
             border: '9px solid #ffff',
-            // transform:'scale(1.5)'
             
           }}
           

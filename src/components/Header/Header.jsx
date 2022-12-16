@@ -27,7 +27,8 @@ export default function Header() {
     setScroll(window.scrollY);
   };
   return (
-    <Box
+    <Box className="navbar">
+<Box
       className="main-header"
       // padding="120px 0px"
       // color="white"
@@ -127,6 +128,7 @@ export default function Header() {
           </Grid> */}
         </Grid>
       </Box>
+    </Box>
     </Box>
   );
 }

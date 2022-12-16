@@ -17,6 +17,7 @@ import CleaningServicesIcon from "@mui/icons-material/CleaningServices";
 export default function Footer() {
   return (
     <>
+    <Box className="footer">
       <Box
         display="flex"
         flexDirection="column"
@@ -32,7 +33,7 @@ export default function Footer() {
             <Typography
               style={{
                 fontSize: "16px",
-                color: "#575757",
+                color: "#aebdc6",
                 fontWeight: "400",
                 opacity: "0.8",
               }}
@@ -70,7 +71,7 @@ export default function Footer() {
               </Button>
             </Box>
             <Typography
-              style={{ fontSize: "17px", color: "#575757", fontWeight: "600" }}
+              style={{ fontSize: "17px", color: "#aebdc6", fontWeight: "600" }}
             >
               10/10 Overall rating
             </Typography>
@@ -86,7 +87,7 @@ export default function Footer() {
             <List
               style={{
                 fontSize: "15px",
-                color: "#575757",
+                color: "#aebdc6",
                 fontWeight: "500",
                 opacity: "0.8",
               }}
@@ -94,7 +95,7 @@ export default function Footer() {
               <Typography
                 style={{
                   fontSize: "18px",
-                  color: "#0b163f",
+                  color: "white",
                   fontWeight: "600",
                   padding: "8px 14px",
                 }}
@@ -104,7 +105,7 @@ export default function Footer() {
               <Typography
                 style={{
                   fontSize: "14px",
-                  // color: "#0b163f",
+                  // color: "white",
                   fontWeight: "600",
                   padding: "8px 14px",
                 }}
@@ -127,7 +128,7 @@ export default function Footer() {
             <List
               style={{
                 fontSize: "15px",
-                color: "#575757",
+                color: "#aebdc6",
                 fontWeight: "500",
                 opacity: "0.8",
               }}
@@ -135,7 +136,7 @@ export default function Footer() {
               <Typography
                 style={{
                   fontSize: "18px",
-                  color: "#0b163f",
+                  color: "white",
                   fontWeight: "600",
                   padding: "8px 14px",
                 }}
@@ -153,7 +154,7 @@ export default function Footer() {
             <List
               style={{
                 fontSize: "15px",
-                color: "#575757",
+                color: "#aebdc6",
                 fontWeight: "500",
                 opacity: "0.8",
               }}
@@ -161,7 +162,7 @@ export default function Footer() {
               <Typography
                 style={{
                   fontSize: "18px",
-                  color: "#0b163f",
+                  color: "white",
                   fontWeight: "600",
                   padding: "8px 14px",
                 }}
@@ -187,6 +188,7 @@ export default function Footer() {
             </List>
           </Grid>
         </Grid>
+      </Box>
       </Box>
     </>
   );

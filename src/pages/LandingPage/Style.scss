@@ -1,0 +1,36 @@
+.form-contect {
+    // max-width: 30%;
+    /* margin: auto; */
+  }
+  .namefeild {
+    width: 93%;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid lightsteelblue;
+  }
+  .namefeild1 {
+    width: 42%;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid lightsteelblue;
+  }
+  .namefeild2 {
+    width: 42%;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid lightsteelblue;
+  }
+  .upper-feild{
+    display: flex;
+    gap: 15px;
+  }
+  .from-button{
+    background-color: lightgray;
+    border: 1px solid lightsteelblue;
+    padding: 12px;
+  border-radius: 5px;
+  width: 100px;
+  }

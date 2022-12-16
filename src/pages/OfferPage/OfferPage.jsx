@@ -1,5 +1,5 @@
 import { Typography, Box, Grid } from "@mui/material";
-import React from "react";
+import React,{useEffect} from "react";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Home from "./../../assets/umerbhisite/img/home.jpg";
 import Home2 from "./../../assets/umerbhisite/img/home2.jpg";
@@ -8,21 +8,17 @@ import Home4 from "./../../assets/umerbhisite/img/home4.jpg";
 import { Link } from "react-router-dom";
 
 function OfferPage() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  }, [])
   return (
     <>
-      <Box
-        className="main-header"
-        // padding="120px 0px"
-        // color="white"
-        display="flex"
-        flexDirection="column"
-        justifyContent="start"
-        margin="auto"
-        sx={{
-          width: { lg: "1200px", md: "900px", sm: "720px", xs: "350px" },
-        }}
-      >
-        <Box style={{ padding: "170px 0 80px", textAlign: "center" }}>
+    <Box className="blogbanner">
+    <Box style={{ padding: "170px 0 80px", textAlign: "center" }}>
           <Typography
             style={{ color: "#074e97", fontSize: "40px", fontWeight: "400" }}
           >
@@ -48,6 +44,20 @@ function OfferPage() {
             for you?
           </Typography>
         </Box>
+    </Box>
+      <Box
+        className="main-header"
+        // padding="120px 0px"
+        // color="white"
+        display="flex"
+        flexDirection="column"
+        justifyContent="start"
+        margin="auto"
+        sx={{
+          width: { lg: "1200px", md: "900px", sm: "720px", xs: "350px" },
+        }}
+      >
+        
         <Grid container my={4} rowSpacing={2} columnSpacing={2}>
           <Grid item sm={6} xs={12} style={{ padding: "30px" }}>
             <Typography

@@ -1,5 +1,5 @@
 import { Typography, Box, Grid, List, ListItem } from "@mui/material";
-import React from "react";
+import React,{useEffect} from "react";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Service1 from "../../assets/umerbhisite/img/message.png";
 import Service2 from "../../assets/umerbhisite/img/clean1.png";
@@ -12,21 +12,17 @@ import { Link } from "react-router-dom";
 import { height } from "@mui/system";
 
 function Contectus() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  }, [])
   return (
     <>
-      <Box
-        className="main-header"
-        // padding="120px 0px"
-        // color="white"
-        display="flex"
-        flexDirection="column"
-        justifyContent="start"
-        margin="auto"
-        sx={{
-          width: { lg: "1200px", md: "900px", sm: "720px", xs: "350px" },
-        }}
-      >
-        <Box style={{ padding: "170px 0 80px", textAlign: "center" }}>
+    <Box className="blogbanner">
+    <Box style={{ padding: "170px 0 80px", textAlign: "center" }}>
           <Typography
             style={{ color: "#074e97", fontSize: "40px", fontWeight: "400" }}
           >
@@ -52,6 +48,20 @@ function Contectus() {
             order
           </Typography>
         </Box>
+    </Box>
+      <Box
+        className="main-header"
+        // padding="120px 0px"
+        // color="white"
+        display="flex"
+        flexDirection="column"
+        justifyContent="start"
+        margin="auto"
+        sx={{
+          width: { lg: "1200px", md: "900px", sm: "720px", xs: "350px" },
+        }}
+      >
+        
         <Grid container my={4} rowSpacing={2} columnSpacing={2}>
           <Grid
             sm={4}
